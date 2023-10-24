@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'Druk';
+  src: url(../../public/Druk-Wide.ttf);
+}
+
+.wrapper{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.wrapperGrid{
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.banner{
+  max-width: 205px;
+  width: 100%;
+  position: relative;
+}
+
+.content{
+  max-width: 995px;
+  width: 100%;
+  position: relative;
+}
+.content h2 {
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94px;
+  padding-top: 54px;
+  font-family: 'Druk';
+}
+
+.contentPara{
+  padding-left: 382px;
+}
+
+.contentPara p{
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px; 
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.buttonGrid{
+  display: flex;
+  gap: 20px;
+}
+
+.buttonGrid button{ 
+  display: flex;
+  width: auto;
+  min-width: 200px;
+  height: 60px;
+  padding: 21px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background:  #FF632C;
+  border: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  font-family: 'Druk';
+  transition: all 0.5s;
+}
+
+.buttonGrid button:hover{ 
+  background:  #ca4414;
+}
+.buttonGrid button:last-child{ 
+  border: 1px solid #0083FE;
+  background: transparent;
+}
+
+.buttonGrid button:last-child:hover{ 
+  background:  #0083FE;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .wrapperGrid{
+    max-width: 900px;
+    padding: 20px 15px;
+  }
+  .content h2 {
+    font-size: 48px;
+    line-height: 74px;
+}
+.contentPara{
+  padding-left: 300px;
+}
+.buttonGrid button{ 
+  font-size: 14px;
+}
+}
+
+
+@media screen and (max-width: 950px) {
+  .wrapperGrid{
+    flex-wrap: wrap;
+  }
+  .wrapper{
+    height: auto;
+    
+  }
+  .contentPara{
+    padding-left: 0px;
+    text-align: center;
+  }
+  .content h2 {
+    text-align: center;
+    padding-top: 0;
+    font-size: 30px;
+    line-height: 44px;
+}
+  .banner{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.banner img{
+  width: 100%;
+  height: auto;
+}
+.buttonGrid {
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contentPara p{
+  font-size: 18px;
+  line-height: 28px; 
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.buttonGrid button{ 
+max-width: 300px;
+    width: 100%;
+}
+}
