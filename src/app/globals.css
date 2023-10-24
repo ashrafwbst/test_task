@@ -92,6 +92,8 @@ body {
 body {
   color: rgb(var(--foreground-rgb));
   background: url(../../public/bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 a {
