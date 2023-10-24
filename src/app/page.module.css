@@ -75,6 +75,7 @@
   cursor: pointer;
   font-family: 'Druk';
   transition: all 0.5s;
+  color: #fff;
 }
 
 .buttonGrid button:hover{ 
